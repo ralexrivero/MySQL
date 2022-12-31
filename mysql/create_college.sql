@@ -20,3 +20,8 @@ INSERT INTO Student (name, age)
     VALUES ('John', 21),
     ('Mary', 22);
 DELETE FROM Student WHERE id = 6;
+ALTER TABLE Student ADD country CHAR(50);
+UPDATE Student SET country='Uruguay' WHERE country IS NULL;
+ALTER TABLE Student MODIFY country CHAR(50) NOT NULL;
+DELETE FROM Student WHERE id > 8;
+SELECT * FROM Student;
