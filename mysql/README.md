@@ -63,3 +63,28 @@ INSERT INTO Student (name, age)
 - `SELECT * FROM Student;`
 - `SELECT name, age FROM Student;`
 
+## Data types
+
+### Numeric data types
+
+- INTEGER: This data type is used to store whole numbers. The range of values that can be stored in an INTEGER depends on the specific database implementation, but it is typically a 32-bit signed integer, which allows for a range of values from -2147483648 to 2147483647.
+
+- SMALLINT: This data type is similar to INTEGER, but it is a 16-bit signed integer, which allows for a smaller range of values (-32768 to 32767).
+
+- BIGINT: This data type is also used to store whole numbers, but it is a 64-bit signed integer, which allows for a much larger range of values (-9223372036854775808 to 9223372036854775807).
+
+- DECIMAL: This data type is used to store decimal values with a fixed precision. When you create a DECIMAL column, you specify the total number of digits and the number of digits after the decimal point.
+
+- NUMERIC: This data type is similar to DECIMAL, but it is typically more accurate and has a larger range of values.
+
+- FLOAT: This data type is used to store floating point numbers. The range and precision of a FLOAT depends on the specific database implementation.
+
+- REAL: This data type is similar to FLOAT, but it typically has a smaller range and lower precision.
+
+- DOUBLE PRECISION: This data type is also used to store floating point numbers, and it typically has a larger range and higher precision than FLOAT or REAL.
+
+### String data types
+
+- CHAR: This data type is used to store a fixed-length string (that is, a string with a fixed number of characters). When you create a CHAR column, you specify the maximum number of characters that can be stored in the column. The length of a CHAR value cannot be changed. A fixed size from 0 to 255. Default is 1.
+
+- VARCHAR: (Variable characters) This data type is used to store a variable-length string (that is, a string with a variable number of characters). When you create a VARCHAR column, you specify the maximum number of characters that can be stored in the column. The length of a VARCHAR value can be changed. Can be from 0 to 65535.
