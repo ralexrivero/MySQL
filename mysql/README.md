@@ -33,6 +33,14 @@ source /code/SQL/mysql/01.sql;
 - `SHOW TABLES;`
 - `DESCRIBE Student;` - to show the table structure (the fields and their types)
 
+#### CREATE
+
+- `CREATE DATABASE db_name;`
+
+#### DROP
+
+- `DROP DATABAES db_name;`
+
 ### DML - Data Manipulation Language
 
 #### insert
@@ -106,4 +114,18 @@ CREATE TABLE Customer (
 );
 ```
 
-```sql
+## CREATE AND READ
+
+### CREATE TABLE
+
+- `CREATE TABLE customers(customerName VARCHAR(100), phoneNumber(INT));`
+
+### ALTER
+
+- `ALTER TABLE students ADD(age int, country VARCHAR(50), nationality VARCHAR(255));`
+- `ALTER TABLE students DROP COLUMN nationality;`
+- `ALTER TABLE students MODIFY COLUMN country VARCHAR(100);`
+
+### INSERT
+
+- `INSERT INTO students (age, country) VALUES (20, 'USA'), (21, 'USA'), (22, 'USA');`
