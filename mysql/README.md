@@ -96,7 +96,7 @@ INSERT INTO Student (name, age)
 - PRIMARY KEY: This constraint uniquely identifies each record in a table.
 - FOREIGN KEY: This constraint ensures the referential integrity of the data in the table.
 - CHECK: This constraint ensures that all values in a column satisfies a specific condition.
-- DEFAULT: This constraint specifies a default value for a column.
+- DEFAULT: This constraint specifies a default value for a column. If no data is provided, the database will provide the default value instead.
 - INDEX: This is used to create and retrieve data from the database very quickly.
 
 ```sql
@@ -105,3 +105,5 @@ CREATE TABLE Customer (
     customer_name VARCHAR(255) NOT NULL,
 );
 ```
+
+```sql
