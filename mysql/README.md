@@ -88,3 +88,20 @@ INSERT INTO Student (name, age)
 - CHAR: This data type is used to store a fixed-length string (that is, a string with a fixed number of characters). When you create a CHAR column, you specify the maximum number of characters that can be stored in the column. The length of a CHAR value cannot be changed. A fixed size from 0 to 255. Default is 1.
 
 - VARCHAR: (Variable characters) This data type is used to store a variable-length string (that is, a string with a variable number of characters). When you create a VARCHAR column, you specify the maximum number of characters that can be stored in the column. The length of a VARCHAR value can be changed. Can be from 0 to 65535.
+
+### Databases constraints
+
+- NOT NULL: This constraint ensures that a column cannot have a NULL value.
+- UNIQUE: This constraint ensures that all values in a column are different.
+- PRIMARY KEY: This constraint uniquely identifies each record in a table.
+- FOREIGN KEY: This constraint ensures the referential integrity of the data in the table.
+- CHECK: This constraint ensures that all values in a column satisfies a specific condition.
+- DEFAULT: This constraint specifies a default value for a column.
+- INDEX: This is used to create and retrieve data from the database very quickly.
+
+```sql
+CREATE TABLE Customer (
+    customer_id INT NOT NULL,
+    customer_name VARCHAR(255) NOT NULL,
+);
+```
