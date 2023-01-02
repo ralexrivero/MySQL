@@ -173,3 +173,110 @@ WHERE last_name = 'Smith';
 ```
 
 - `DELETE FROM students;` delete all data
+
+## SQL OPERATORS
+
+### Arithmetic operators
+
+- `+` addition
+- `-` subtraction
+- `*` multiplication
+- `/` division
+- `%` modulus
+
+```sql
+mysql> SELECT 5 + 5;
++------+
+| 5 +5 |
++------+
+|   10 |
++------+
+1 row in set (0.00 sec)
+```
+
+### Comparison operators
+
+- `=` equal
+- `<>` not equal
+- `>` greater than
+- `<` less than
+- `>=` greater than or equal to
+- `<=` less than or equal to
+
+```sql
+mysql> SELECT 5 > 5;
++--------+
+| 5 > 5 |
++--------+
+|      0 |
++--------+
+1 row in set (0.00 sec)
+```
+
+### Logical operators
+
+- `AND` logical AND
+- `OR` logical OR
+- `NOT` logical NOT
+
+```sql
+mysql> SELECT 5 > 5 AND 5 < 5;
++----------------+
+| 5 > 5 AND 5 < 5 |
++----------------+
+|              0  |
++----------------+
+1 row in set (0.00 sec)
+```
+
+### LIKE operator
+
+- `LIKE` operator is used in a WHERE clause to search for a specified pattern in a column.
+- `%` wildcard represents zero, one, or multiple characters
+- `_` wildcard represents a single character
+
+```sql
+mysql> SELECT * FROM students WHERE name LIKE 'S%';
++----+----------+-------+
+| id | name | age |
++----+----------+-------+
+| 1 | Sam   | 20 |
+| 2 | Sarah | 21 |
+| 3 | Sally | 22 |
++----+----------+-------+
+3 rows in set (0.00 sec)
+```
+
+### IN operator
+
+- `IN` operator allows you to specify multiple values in a WHERE clause.
+
+```sql
+mysql> SELECT * FROM students WHERE name IN ('Sam', 'Sarah');
++----+----------+-------+
+| id | name | age |
++----+----------+-------+
+| 1 | Sam   | 20 |
+| 2 | Sarah | 21 |
++----+----------+-------+
+2 rows in set (0.00 sec)
+```
+
+### BETWEEN operator
+
+- `BETWEEN` operator selects values within a given range. The values can be numbers, text, or dates.
+
+```sql
+mysql> SELECT * FROM students WHERE age BETWEEN 20 AND 22;
++----+----------+-------+
+| id | name | age |
++----+----------+-------+
+| 1 | Sam   | 20 |
+| 2 | Sarah | 21 |
+| 3 | Sally | 22 |
++----+----------+-------+
+3 rows in set (0.00 sec)
+```
+
+- [execute first](./01-before_operators.sql) - to create a db to work with
+- [use operators](./01-operators.sql) - to test operators
