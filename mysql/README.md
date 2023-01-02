@@ -114,40 +114,44 @@ CREATE TABLE Customer (
 );
 ```
 
-## CREATE AND READ
+## CRUD OPERATIONS
 
-### CREATE TABLE
+Perform Create, Read, Update, and Delete (CRUD) operations on a table.
+
+### CREATE AND READ
+
+#### CREATE TABLE
 
 - `CREATE TABLE customers(customerName VARCHAR(100), phoneNumber(INT));`
 
-### ALTER
+#### ALTER
 
 - `ALTER TABLE students ADD(age int, country VARCHAR(50), nationality VARCHAR(255));`
 - `ALTER TABLE students DROP COLUMN nationality;`
 - `ALTER TABLE students MODIFY COLUMN country VARCHAR(100);`
 
-### INSERT
+#### INSERT
 
 - `INSERT INTO students (age, country) VALUES (20, 'USA'), (21, 'USA'), (22, 'USA');`
 
-### DELETE ALL
+#### DELETE ALL
 
 - `TRUNCATE TABLE students;`
 
-## QUERY DATA
+#### QUERY DATA
 
-### SELECT
+##### SELECT
 
 - `SELECT * FROM students;` all information in all columns
 - `SELECT name, age FROM students;`
 
-### INSERT INTO SELECT
+##### INSERT INTO SELECT
 
 - `INSERT INTO students (name, age) SELECT name, age FROM students;`
 
-## UPDATE AND DELETE DATA
+### UPDATE AND DELETE DATA
 
-### UPDATE
+#### UPDATE
 
 The `SET` clause specifies the location of the records within the table. The `WHERE` clause specifies the records to be updated.
 
@@ -159,7 +163,7 @@ SET home_address = '234 Park Avenue, New York, NY 10017'
 WHERE id = 3;
 ```
 
-### DELETE DATA
+#### DELETE DATA
 
 - `DELETE FROM students WHERE id = '1';`
 
