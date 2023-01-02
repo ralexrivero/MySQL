@@ -17,3 +17,10 @@ SQL - Structured Query Language
 - Oracle PL/SQL Tutorial - https://www.tutorialspoint.com/oracle/oracle_plsql.htm
 - JavaPoint - PL/SQL Tutorial - https://www.javatpoint.com/plsql-tutorial
 - W3Schools - PL/SQL Tutorial - https://www.w3schools.com/sql/sql_plsql.asp
+
+### SCHEMAS
+
+- [Prisma](https://www.prisma.io/dataguide/intro/intro-to-schemas)
+- [Lucidchart](https://www.lucidchart.com/pages/database-diagram/database-schema)
+- [Educative](https://www.educative.io/blog/what-are-database-schemas-examples)
+- [IBM](https://www.ibm.com/topics/database-schema)

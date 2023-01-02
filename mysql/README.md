@@ -389,7 +389,6 @@ mysql> SELECT * FROM students WHERE country IN ('USA', 'Canada');
 - `IS NULL` Used to compare a value with a `NULL` value.
 - `UNIQUE` Searches every row of a specified table for uniqueness (no duplicates)
 
-
 ## DISTINCT
 
 - `DISTINCT` is used to return only distinct (different) values.
@@ -442,3 +441,7 @@ mysql> SELECT DISTINCT City FROM Customer;
 SELECT DISTINCT COUNT(column_name)
 FROM table_name;
 ```
+
+## SCHEMA
+
+The schema in a database is the structure that describes the layout of the database. It defines how the data is organized and how the relations among them are associated. The schema is independent of the actual data stored in the database.
