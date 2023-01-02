@@ -86,7 +86,7 @@ If you struggle with the solution, you can `TRUNCATE` the table and start over.
 
 ## INSERT DATA
 
-Populate the table with records for 12 students.
+Populate the table with records for 6 students.
 
 ### Solution to insert data
 
