@@ -388,3 +388,57 @@ mysql> SELECT * FROM students WHERE country IN ('USA', 'Canada');
 - `OR` Used to combine multiple conditions in an SQL statement's `WHERE` clause.
 - `IS NULL` Used to compare a value with a `NULL` value.
 - `UNIQUE` Searches every row of a specified table for uniqueness (no duplicates)
+
+
+## DISTINCT
+
+- `DISTINCT` is used to return only distinct (different) values.
+
+```sql
+SELECT DISTINCT column_name(s)
+FROM table_name;
+```
+
+```sql
+mysql> SELECT DISTINCT Country, City FROM Customer;
++---------+-----------------------+
+| Country | City                  |
++---------+-----------------------+
+| Brazil  | São José dos Campos |
+| Brazil  | São Paulo            |
+| Brazil  | Rio de Janeiro        |
+| Canada  | Edmonton              |
+| Canada  | Vancouver             |
++---------+-----------------------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT DISTINCT Country FROM Customer;
++---------+
+| Country |
++---------+
+| Brazil  |
+| Canada  |
++---------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT DISTINCT City FROM Customer;
++-----------------------+
+| City                  |
++-----------------------+
+| São José dos Campos |
+| São Paulo            |
+| Rio de Janeiro        |
+| Edmonton              |
+| Vancouver             |
++-----------------------+
+5 rows in set (0.00 sec)
+```
+
+### DISTINCT WITH AGGREGATE FUNCTIONS
+
+- `DISTINCT` can be used with aggregate functions like `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`, etc.
+
+```sql
+SELECT DISTINCT COUNT(column_name)
+FROM table_name;
+```
