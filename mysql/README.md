@@ -314,11 +314,63 @@ Order by multiple columns: `ORDER BY column_name1 ASC|DESC, column_name2 ASC|DES
 ```sql
 mysql> SELECT * FROM students ORDER BY age DESC, name ASC;
 +----+----------+-------+
-| id | name | age |
+| id | name     | age   |
 +----+----------+-------+
-| 3 | Sally | 22 |
-| 2 | Sarah | 21 |
-| 1 | Sam   | 20 |
+| 3  | Sally    | 22    |
+| 2  | Sarah    | 21    |
+| 1  | Sam      | 20    |
 +----+----------+-------+
+3 rows in set (0.00 sec)
+```
+
+### WHERE CLAUSE
+
+The where clause is used tu filter and extract record that satisfy a given condition.
+
+```sql
+SELECT column_name
+WHERE condition;
+```
+
+#### BETWEEN
+
+```sql
+mysql> SELECT * FROM students WHERE birthday BETWEEN '1985-01-01' AND '1998-12-31';
++----+-----------+----------+------------+--------+------------------+---------------+-----------+--------------+
+| id | firstName | lastName | birthday   | gender | address          | phone         | country   | city         |
++----+-----------+----------+------------+--------+------------------+---------------+-----------+--------------+
+|  2 | Jane      | Dylan    | 1998-04-30 | Female | 234 First St     | 555-444-5555  | Candada   | Toronto      |
+|  5 | Maria     | Gonzalez | 1985-05-12 | Female | 25 de Mayo 1456  | 551-555-42337 | Argentina | Buenos Aires |
+|  6 | Sofia     | Perez    | 1990-09-15 | Female | Puerto Mont 2456 | 588-975-6431  | Chile     | Santiago     |
++----+-----------+----------+------------+--------+------------------+---------------+-----------+--------------+
+3 rows in set (0.01 sec)
+```
+
+#### LIKE
+
+```sql
+mysql> SELECT * FROM students WHERE country LIKE 'U%';
++----+-----------+----------+------------+--------+------------------------+---------------+---------+------------+
+| id | firstName | lastName | birthday   | gender | address                | phone         | country | city       |
++----+-----------+----------+------------+--------+------------------------+---------------+---------+------------+
+|  1 | John      | Doe      | 2000-10-10 | Male   | 123 Main St            | 555-555-5555  | USA     | New York   |
+|  3 | Bob       | Smith    | 1999-12-25 | Male   | 456 Secondary St       | 555-333-12345 | USA     | New York   |
+|  4 | Ronald    | Rivero   | 1980-09-24 | Male   | Ellauri 365 bis apto 3 | 59893776930   | Uruguay | Montevideo |
++----+-----------+----------+------------+--------+------------------------+---------------+---------+------------+
+3 rows in set (0.00 sec)
+
+```
+
+#### IN
+
+```sql
+mysql> SELECT * FROM students WHERE country IN ('USA', 'Canada');
++----+-----------+----------+------------+--------+------------------+---------------+---------+----------+
+| id | firstName | lastName | birthday   | gender | address          | phone         | country | city     |
++----+-----------+----------+------------+--------+------------------+---------------+---------+----------+
+|  1 | John      | Doe      | 2000-10-10 | Male   | 123 Main St      | 555-555-5555  | USA     | New York |
+|  2 | Jane      | Dylan    | 1998-04-30 | Female | 234 First St     | 555-444-5555  | Canada  | Toronto  |
+|  3 | Bob       | Smith    | 1999-12-25 | Male   | 456 Secondary St | 555-333-12345 | USA     | New York |
++----+-----------+----------+------------+--------+------------------+---------------+---------+----------+
 3 rows in set (0.00 sec)
 ```
