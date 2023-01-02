@@ -374,3 +374,17 @@ mysql> SELECT * FROM students WHERE country IN ('USA', 'Canada');
 +----+-----------+----------+------------+--------+------------------+---------------+---------+----------+
 3 rows in set (0.00 sec)
 ```
+
+## LOGICAL OPERATORS
+
+- `ALL` Used to compare a single value to all the values in another value set.
+- `AND` Allows for the existence of multiple conditions in an SQL statement's `WHERE` clause.
+- `ANY` Used to compare a value to any applicable value in the list as per the condition.
+- `BETWEEN` Used to search for values that are within a set of values, given the minimum value and the maximum value.
+- `EXISTS` Used to search for the presence of a row in a specified table that meets a certain criterion.
+- `IN` Used to compare a value to a list of literal values that have been specified.
+- `LIKE` Used to compare a value to similar values using wildcard operators.
+- `NOT` Reverses the meaning of the logical operator with which it is used. For example: `NOT EXISTS`, `NOT BETWEEN`, `NOT IN`, etc. This is a negate operator.
+- `OR` Used to combine multiple conditions in an SQL statement's `WHERE` clause.
+- `IS NULL` Used to compare a value with a `NULL` value.
+- `UNIQUE` Searches every row of a specified table for uniqueness (no duplicates)
