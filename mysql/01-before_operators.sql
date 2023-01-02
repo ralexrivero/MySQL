@@ -8,3 +8,4 @@ CREATE TABLE employees (
 );
 
 INSERT INTO employees(employee_name, salary, allowance) VALUES ('John', 25000, 1000), ('Rony', 45000, 10000), ('Aly', 33000, 3500), ('Clark', 35000, 8500);
+INSERT INTO employees (employee_name, salary) VALUES ('Dan', 30000), ('July', 27000), ('Ory', 33500);
