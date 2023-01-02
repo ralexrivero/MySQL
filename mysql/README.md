@@ -197,7 +197,7 @@ mysql> SELECT 5 + 5;
 ### Comparison operators
 
 - `=` equal
-- `<>` not equal
+- `<>` not equal or `!=`
 - `>` greater than
 - `<` less than
 - `>=` greater than or equal to
@@ -280,3 +280,45 @@ mysql> SELECT * FROM students WHERE age BETWEEN 20 AND 22;
 
 - [execute first](./01-before_operators.sql) - to create a db to work with
 - [use operators](./01-operators.sql) - to test operators
+
+## ORDER BY CLAUSE
+
+The `ORDER BY` clause is used to sort the result-set in ascending or descending order.
+
+```sql
+SELECT column_name(s)
+FROM table_name
+ORDER BY column_name(s) ASC|DESC;
+```
+
+- `ASC` ascending order
+- `DESC` descending order
+
+```sql
+mysql> SELECT * FROM students ORDER BY age DESC;
++----+----------+-------+
+| id | name | age |
++----+----------+-------+
+| 3 | Sally | 22 |
+| 2 | Sarah | 21 |
+| 1 | Sam   | 20 |
++----+----------+-------+
+3 rows in set (0.00 sec)
+```
+
+### TYPES OF ORDERING
+
+Order by one column: `ORDER BY column_name ASC|DESC;`
+Order by multiple columns: `ORDER BY column_name1 ASC|DESC, column_name2 ASC|DESC;`
+
+```sql
+mysql> SELECT * FROM students ORDER BY age DESC, name ASC;
++----+----------+-------+
+| id | name | age |
++----+----------+-------+
+| 3 | Sally | 22 |
+| 2 | Sarah | 21 |
+| 1 | Sam   | 20 |
++----+----------+-------+
+3 rows in set (0.00 sec)
+```
