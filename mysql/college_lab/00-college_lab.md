@@ -83,3 +83,29 @@ mysql> DESCRIBE students;
 If you struggle with the solution, you can `TRUNCATE` the table and start over.
 
 - [01-modify_table.sql](./01-modify_table.sql)
+
+## INSERT DATA
+
+Populate the table with records for 12 students.
+
+### Solution to insert data
+
+```sql
+mysql> SELECT * FROM students;
++----+-----------+----------+------------+--------+------------------------+---------------+-----------+--------------+
+| id | firstName | lastName | birthday   | gender | address                | phone         | country   | city         |
++----+-----------+----------+------------+--------+------------------------+---------------+-----------+--------------+
+|  1 | John      | Doe      | 2000-10-10 | Male   | 123 Main St            | 555-555-5555  | USA       | New York     |
+|  2 | Jane      | Dylan    | 1998-04-30 | Female | 234 First St           | 555-444-5555  | Candada   | Toronto      |
+|  3 | Bob       | Smith    | 1999-12-25 | Male   | 456 Secondary St       | 555-333-12345 | USA       | New York     |
+|  4 | Ronald    | Rivero   | 1980-09-24 | Male   | Ellauri 365 bis apto 3 | 59893776930   | Uruguay   | Montevideo   |
+|  5 | Maria     | Gonzalez | 1985-05-12 | Female | 25 de Mayo 1456        | 551-555-42337 | Argentina | Buenos Aires |
+|  6 | Sofia     | Perez    | 1990-09-15 | Female | Puerto Mont 2456       | 588-975-6431  | Chile     | Santiago     |
++----+-----------+----------+------------+--------+------------------------+---------------+-----------+--------------+
+6 rows in set (0.00 sec)
+
+```
+
+### code to insert data
+
+- [02-insert_data.sql](./03-insert_data.sql)

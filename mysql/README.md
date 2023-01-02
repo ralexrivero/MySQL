@@ -144,3 +144,28 @@ CREATE TABLE Customer (
 ### INSERT INTO SELECT
 
 - `INSERT INTO students (name, age) SELECT name, age FROM students;`
+
+## UPDATE AND DELETE DATA
+
+### UPDATE
+
+The `SET` clause specifies the location of the records within the table. The `WHERE` clause specifies the records to be updated.
+
+- `UPDATE students SET age = 21 WHERE age = 20;`
+
+```sql
+UPDATE students
+SET home_address = '234 Park Avenue, New York, NY 10017'
+WHERE id = 3;
+```
+
+### DELETE DATA
+
+- `DELETE FROM students WHERE id = '1';`
+
+```sql
+DELETE FROM students
+WHERE last_name = 'Smith';
+```
+
+- `DELETE FROM students;` delete all data
