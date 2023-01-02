@@ -129,3 +129,18 @@ CREATE TABLE Customer (
 ### INSERT
 
 - `INSERT INTO students (age, country) VALUES (20, 'USA'), (21, 'USA'), (22, 'USA');`
+
+### DELETE ALL
+
+- `TRUNCATE TABLE students;`
+
+## QUERY DATA
+
+### SELECT
+
+- `SELECT * FROM students;` all information in all columns
+- `SELECT name, age FROM students;`
+
+### INSERT INTO SELECT
+
+- `INSERT INTO students (name, age) SELECT name, age FROM students;`
