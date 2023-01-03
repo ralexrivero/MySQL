@@ -1,0 +1,14 @@
+CREATE DATABASE automobile;
+USE automobile;
+CREATE TABLE Vehicle ( vehicleID VARCHAR(10) PRIMARY KEY, OwnerID VARCHAR(10), PlateNumber VARCHAR(10), PhoneNumber INT );
+SHOW TABLES;
+DESCRIBE Vehicle;
+INSERT INTO Vehicle (vehicleID, OwnerID, PlateNumber, PhoneNumber) VALUES ('D01', 'Ow01', 'PL02NY', 0738297294), ('D02', 'Ow02', 'SN02L2', 0725021582), ('D03', 'Ow03', 'PK02L2', 0765021583);
+SELECT * FROM Vehicle;
+CREATE TABLE owner;
+CREATE TABLE owner (OwnerID VARCHAR(10), OwnerName VARCHAR(50), OwnerAddress VARCHAR(255));
+ALTER TABLE owner MODIFY COLUMN OwnerID VARCHAR(10) PRIMARY KEY;
+INSERT INTO owner (OwnerID, OwnerName, OwnerAddress) VALUES ('Ow01', 'Amajad Masarah', '123 Main Street Capital'), ('Ow02', 'Henkin Mathul', '789 Garden Streen, Illinois'), ('Ow03', 'Lumy Gasparov', '23 Alberius Avenue');
+SELECT * FROM owner;
+ALTER TABLE Vehicle ADD FOREIGN KEY (OwnerID) REFERENCES owner(OwnerID);
+DESCRIBE Vehicle;
