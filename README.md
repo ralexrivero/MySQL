@@ -24,3 +24,16 @@ SQL - Structured Query Language
 - [Lucidchart](https://www.lucidchart.com/pages/database-diagram/database-schema)
 - [Educative](https://www.educative.io/blog/what-are-database-schemas-examples)
 - [IBM](https://www.ibm.com/topics/database-schema)
+
+### ER-D
+
+- [Opentextbc1](https://opentextbc.ca/dbdesign01/chapter/chapter-8-entity-relationship-model/)
+- [IBM](https://www.ibm.com/docs/en/ida/9.1.1?topic=entities-primary-foreign-keys)
+- [Scaler](https://www.scaler.com/topics/dbms/relational-model-in-dbms/)
+- [Oracle](https://www.oracle.com/database/what-is-a-relational-database/)
+
+### Normalization and anomalies
+
+- [Database Design – 2nd Edition](https://opentextbc.ca/dbdesign01/chapter/chapter-12-normalization/)
+- [Database Normalization](https://www.databasestar.com/database-normalization/)
+- [Anomalies](https://www.bbc.co.uk/bitesize/guides/zc93tv4/revision/2)
