@@ -1,0 +1,13 @@
+CREATE TABLE customers (
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  address VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE orders (
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  customer_id INT NOT NULL,
+  product VARCHAR(255) NOT NULL,
+  quantity INT NOT NULL,
+  FOREIGN KEY (customer_id) REFERENCES customers(id)
+);

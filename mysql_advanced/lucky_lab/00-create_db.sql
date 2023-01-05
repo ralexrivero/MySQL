@@ -1,4 +1,4 @@
-CREATE DATABASE luckyshrub_db;
+CREATE DATABASE IF NOT EXISTS luckyshrub_db;
 
 USE luckyshrub_db;
 

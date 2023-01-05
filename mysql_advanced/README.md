@@ -105,3 +105,63 @@ mysql> SELECT * FROM customer_purchases WHERE Location LIKE '_a%';
 +------------+-----------------+-------------------+-----------+
 1 row in set (0.00 sec)
 ```
+
+## Aliases
+
+- Aliases provide temprary names within the database for ease-of-use
+
+### Rename tables and columns
+
+```sql
+SELECT EmployeeID AS ID, Department, ContactNo AS Num, Email, AnnualSalary AS Salary FROM employees;
++----+------------------+-----------+-----------------------------+--------+
+| ID | Department       | Num       | Email                       | Salary |
++----+------------------+-----------+-----------------------------+--------+
+|  1 | Recruitment      | 351478025 | Seamus.h@luckyshrub.com     |  50000 |
+|  2 | Legal            | 351475058 | Thomas.e@ luckyshrub.com    |  75000 |
+|  3 | Marketing        | 351930582 | Simon.t@ luckyshrub.com     |  40000 |
+|  4 | Finance          | 351258569 | Francesca.s@ luckyshrub.com |  45000 |
+|  5 | Customer Service | 351083098 | Emily.s@ luckyshrub.com     |  35000 |
+|  6 | Human Resources  | 351022508 | Maria.c@ luckyshrub.com     |  55000 |
+|  7 | Marketing        | 351478458 | Rick.G@luckyshrub.com       |  50000 |
++----+------------------+-----------+-----------------------------+--------+
+7 rows in set (0.00 sec)
+```
+
+### Rename functions
+
+```sql
+mysql> SELECT CONCAT (EmployeeID, '-', EmployeeName) AS ID, AnnualSalary AS Salary FROM employees ORDER BY AnnualSalary DESC;
++--------------------+--------+
+| ID                 | Salary |
++--------------------+--------+
+| 2-Thomas Eriksson  |  75000 |
+| 6-Maria Carter     |  55000 |
+| 1-Seamus Hogan     |  50000 |
+| 7-Rick Griffin     |  50000 |
+| 4-Francesca Soffia |  45000 |
+| 3-Simon Tolo       |  40000 |
+| 5-Emily Sierra     |  35000 |
++--------------------+--------+
+7 rows in set (0.00 sec)
+```
+
+```sql
+mysql> SELECT AnnualSalary / 12 AS 'Salary (M)' FROM employees;
++------------+
+| Salary (M) |
++------------+
+|  4166.6667 |
+|  6250.0000 |
+|  3333.3333 |
+|  3750.0000 |
+|  2916.6667 |
+|  4583.3333 |
+|  4166.6667 |
++------------+
+7 rows in set (0.00 sec)
+```
+
+### Multiple tables
+
+
