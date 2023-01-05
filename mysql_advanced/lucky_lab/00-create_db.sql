@@ -1,5 +1,7 @@
-CREATE DATABASE lucky;
-USE lucky;
+CREATE DATABASE luckyshrub_db;
+
+USE luckyshrub_db;
+
 CREATE TABLE customer_purchases (CustomerID INT AUTO_INCREMENT, CustomerName VARCHAR(100), Location VARCHAR(100), Purchases DECIMAL, PRIMARY KEY (CustomerID));
 
 CREATE TABLE Orders (OrderID INT NOT NULL PRIMARY KEY, ClientID VARCHAR(10), ProductID VARCHAR(10), Quantity INT, Cost DECIMAL(6,2));
