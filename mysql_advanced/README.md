@@ -164,4 +164,74 @@ mysql> SELECT AnnualSalary / 12 AS 'Salary (M)' FROM employees;
 
 ### Multiple tables
 
+```sql
+mysql> SELECT c.name AS customer, c.address AS address, o.product, o.quantity
+    -> FROM customers AS c
+    -> JOIN orders AS o ON c.id = o.customer_id;
++----------+-------------------+----------+----------+
+| customer | address           | product  | quantity |
++----------+-------------------+----------+----------+
+| Alice    | 123 Main Street   | Book     |        2 |
+| Alice    | 123 Main Street   | Pen      |        5 |
+| Bob      | 456 Market Street | Notebook |        1 |
++----------+-------------------+----------+----------+
+3 rows in set (0.01 sec)
+```
 
+## JOINS
+
+- `INNER JOIN` - returns records that have matching values in both tables
+- `LEFT JOIN` - returns all records from the left table, and the matched records from the right table
+- `RIGHT JOIN` - returns all records from the right table, and the matched records from the left table
+- `FULL JOIN` - returns all records when there is a match in either left or right table. Used to join a table with itself
+
+### INNER JOIN
+
+```sql
+mysql> SELECT Customers.FullName, Bookings.BookingID
+    -> FROM Customers INNER JOIN Bookings
+    -> ON Customers.CustomerID = Bookings.CustomerID;
++-----------------+-----------+
+| FullName        | BookingID |
++-----------------+-----------+
+| Vanessa MCCarty |         4 |
+| Marcos Romero   |         5 |
+| Anna Iversen    |         6 |
++-----------------+-----------+
+```
+
+### LEFT JOIN
+
+```sql
+mysql> SELECT Customers.FullName, Bookings.BookingID
+    -> FROM Customers LEFT JOIN Bookings
+    -> ON Customers.CustomerID = Bookings.CustomerID;
++-----------------+-----------+
+| FullName        | BookingID |
++-----------------+-----------+
+| Vanessa MCCarty |         4 |
+| Marcos Romero   |         5 |
+| Hiroki Yamane   |      NULL |
+| Anna Iversen    |         6 |
+| Diana Pinto     |      NULL |
++-----------------+-----------+
+```
+
+### RIGHT JOIN
+
+```sql
+mysql> SELECT Customers.FullName, Bookings.BookingID
+    -> FROM Customers RIGHT JOIN Bookings
+    -> ON Customers.CustomerID = Bookings.CustomerID;
++-----------------+-----------+
+| FullName        | BookingID |
++-----------------+-----------+
+| Vanessa MCCarty |         4 |
+| Marcos Romero   |         5 |
+| Anna Iversen    |         6 |
++-----------------+-----------+
+```
+
+### FULL JOIN
+
+```sql
