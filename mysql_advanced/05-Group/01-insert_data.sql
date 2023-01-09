@@ -1,4 +1,4 @@
-INSERT INTO Orders (Departament, OrderDate, OrderQty, OrderTotal)
+INSERT INTO Orders (Department, OrderDate, OrderQty, OrderTotal)
 VALUES
 ('Lawn Care', '2022-05-05', 12, 500),
 ('Garden Maintenance', '2022-05-06', 10, 450),
