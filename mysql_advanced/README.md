@@ -234,4 +234,6 @@ mysql> SELECT Customers.FullName, Bookings.BookingID
 
 ### FULL JOIN
 
-```sql
+### List of content
+
+REPLACE

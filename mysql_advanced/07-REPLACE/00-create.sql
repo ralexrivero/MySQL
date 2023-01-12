@@ -47,4 +47,3 @@ INSERT INTO EmployeeContactInfo (EmployeeID, ContactNumber, Email) VALUES
 (18, '55555568', 'isabelle.moore@example.com'),
 (19, '55555569', 'avery.jackson@example.com'),
 (20, '55555570', 'ella.martin@example.com');
-
