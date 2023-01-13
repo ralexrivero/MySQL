@@ -237,3 +237,10 @@ mysql> SELECT Customers.FullName, Bookings.BookingID
 ### List of content
 
 REPLACE
+
+REPLACE INTO table_name (column1name, column2name, ...)
+VALUES (value1, value2, ...);
+
+REPLACE INTO table_name SET column1name = value, column2name = value, ... ;
+
+The values not provided in the REPLACE statement will be set to their default values (NULL for numeric columns, and '' for string columns).
