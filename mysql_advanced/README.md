@@ -250,3 +250,8 @@ Types of constraints
 Key constraints can only be unique an not NULL
 Domain constraints, limit the values that can accept like type or range
 Referential integrity constraints,
+
+CHEK CONSTRAINTS - CHECK (column_name operator value)
+UNIQUE CONSTRAINTS - UNIQUE (column_name)
+PRIMARY KEY CONSTRAINTS - PRIMARY KEY (column_name)
+FOREIGN KEY CONSTRAINTS - FOREIGN KEY (column_name) REFERENCES table_name (column_name)
