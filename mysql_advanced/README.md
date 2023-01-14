@@ -244,3 +244,9 @@ VALUES (value1, value2, ...);
 REPLACE INTO table_name SET column1name = value, column2name = value, ... ;
 
 The values not provided in the REPLACE statement will be set to their default values (NULL for numeric columns, and '' for string columns).
+
+CONSTRAINTS
+Types of constraints
+Key constraints can only be unique an not NULL
+Domain constraints, limit the values that can accept like type or range
+Referential integrity constraints,
