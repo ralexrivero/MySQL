@@ -1,0 +1,3 @@
+CREATE Staff3 SELECT * FROM Staff2;
+CREATE TABLE Staff4 LIKE Staff2;
+INSERT INTO Staff4 SELECT * FROM Staff2 WHERE Role = 'Sales';
