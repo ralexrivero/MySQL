@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS Mangata_Gallo;
+USE Mangata_Gallo;
+CREATE TABLE IF NOT EXISTS Staff2(staffID INT, fullName VARCHAR(100), phoneNumber VARCHAR(10));

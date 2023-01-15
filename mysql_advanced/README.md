@@ -255,3 +255,17 @@ CHEK CONSTRAINTS - CHECK (column_name operator value)
 UNIQUE CONSTRAINTS - UNIQUE (column_name)
 PRIMARY KEY CONSTRAINTS - PRIMARY KEY (column_name)
 FOREIGN KEY CONSTRAINTS - FOREIGN KEY (column_name) REFERENCES table_name (column_name)
+
+ALTER
+
+MODIFY
+ADD
+DROP
+
+COPY TABLE
+
+Copy table and data to a new table
+
+use LIKE to create the exact table structure
+
+Copy in the same database or trough other database
