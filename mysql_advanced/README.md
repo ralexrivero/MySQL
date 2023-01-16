@@ -269,3 +269,11 @@ Copy table and data to a new table
 use LIKE to create the exact table structure
 
 Copy in the same database or trough other database
+
+SUBQUERY
+
+A subquery is an inner query placed whitin an outer query. The inner query is the child query and the outer query is the parent query.
+
+https://learnsql.com/blog/sql-subquery-examples/
+https://www.mysqltutorial.org/mysql-subquery/
+https://www.w3resource.com/sql/subqueries/understanding-sql-subqueries.php
