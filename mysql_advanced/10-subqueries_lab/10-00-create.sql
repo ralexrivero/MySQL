@@ -30,4 +30,3 @@ INSERT INTO MenuItems VALUES
 
 CREATE TABLE LowCostMenuItems
 (ItemID INT, Name VARCHAR(200), Price INT, PRIMARY KEY(ItemID));
-
