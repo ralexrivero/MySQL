@@ -1,39 +1,12 @@
-# SQL
+# MySQL
 
-SQL - Structured Query Language
+## INTRODUCCIÓN
 
-## REFERENCES
+MySQL es un sistema de gestión de bases de datos relacional (RDBMS) de código abierto, que utiliza lenguaje SQL como interfaz. MySQL se basa en el modelo cliente-servidor, donde el servidor MySQL es el motor de base de datos y el cliente es cualquier aplicación que se conecte a este motor. MySQL es desarrollado, distribuido y soportado por Oracle Corporation.
 
-- W3Schools - SQL Tutorial - https://www.w3schools.com/sql/default.asp
-- Javatpoint - SQL Tutorial - https://www.javatpoint.com/sql-tutorial
-- Tutorialspoint - SQL Tutorial - https://www.tutorialspoint.com/sql/index.htm
-- SQLZoo - SQL Tutorial - https://sqlzoo.net/wiki/SQL_Tutorial
-- SQLBolt - SQL Tutorial - https://sqlbolt.com/
-- SQLCourse - SQL Tutorial - https://www.sqlcourse.com/
-- SQLShack - SQL Tutorial - https://www.sqlshack.com/
-- SQLCourse - SQL Tutorial - https://www.sqlcourse.com/
+## clases
 
-- Pl/sql Tutorial - https://www.tutorialspoint.com/plsql/index.htm
-- Oracle PL/SQL Tutorial - https://www.tutorialspoint.com/oracle/oracle_plsql.htm
-- JavaPoint - PL/SQL Tutorial - https://www.javatpoint.com/plsql-tutorial
-- W3Schools - PL/SQL Tutorial - https://www.w3schools.com/sql/sql_plsql.asp
+## Labs
 
-### SCHEMAS
+## Proyectos
 
-- [Prisma](https://www.prisma.io/dataguide/intro/intro-to-schemas)
-- [Lucidchart](https://www.lucidchart.com/pages/database-diagram/database-schema)
-- [Educative](https://www.educative.io/blog/what-are-database-schemas-examples)
-- [IBM](https://www.ibm.com/topics/database-schema)
-
-### ER-D
-
-- [Opentextbc1](https://opentextbc.ca/dbdesign01/chapter/chapter-8-entity-relationship-model/)
-- [IBM](https://www.ibm.com/docs/en/ida/9.1.1?topic=entities-primary-foreign-keys)
-- [Scaler](https://www.scaler.com/topics/dbms/relational-model-in-dbms/)
-- [Oracle](https://www.oracle.com/database/what-is-a-relational-database/)
-
-### Normalization and anomalies
-
-- [Database Design – 2nd Edition](https://opentextbc.ca/dbdesign01/chapter/chapter-12-normalization/)
-- [Database Normalization](https://www.databasestar.com/database-normalization/)
-- [Anomalies](https://www.bbc.co.uk/bitesize/guides/zc93tv4/revision/2)
