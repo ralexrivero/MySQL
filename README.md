@@ -8,7 +8,7 @@ MySQL es un sistema de gestión de bases de datos relacional (RDBMS) de código 
 
 - 📖 [Wiki MySQL](https://github.com/ralexrivero/MySQL/wiki)
 
-> En la wiki del curso encontrás toda la información para aprender MySQL desde cero hasta avanzado y podes colaborar con el curso agregando contenido.
+> En la wiki del curso encontrás toda la información para aprender MySQL desde cero hasta adquirir conocimientos sobre funciones de nivel avanzado. También podes colaborar con el curso agregando contenido, mejorando la redacción o corrigiendo errores mediante los pull requests o en la media wiki del curso.
 
 ## clases
 

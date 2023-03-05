@@ -1,27 +1,6 @@
 # MySQL
 
-## Run container
 
-- `docker run -d -it --rm -v /home/ralex/code:/code --name mysql -e MYSQL_ROOT_PASSWORD=secret mysql:latest`
-- `docker exec -it mysql bash`
-
-- access mysql
-
-```bash
-mysql -u root -p
-```
-
-- execute sql file
-
-```bash
-mysql -u root -p < /code/SQL/mysql/01.sql
-```
-
-- execute sql file inside mysql
-
-```sql
-source /code/SQL/mysql/01.sql;
-```
 
 ## SQL Subsets
 
