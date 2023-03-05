@@ -1,0 +1,1 @@
+CREATE VIEW ProductView AS SELECT  Name, Price FROM Products;
