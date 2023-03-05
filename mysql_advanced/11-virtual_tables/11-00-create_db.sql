@@ -7,5 +7,5 @@ CREATE TABLE Products (
   Price INT,
   PRIMARY KEY (ProductID),
   UNIQUE(Name),
-  CHECK (PRICE > 0)
-)
+  CHECK (Price > 0)
+);
