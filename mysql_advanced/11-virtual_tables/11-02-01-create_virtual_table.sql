@@ -1,0 +1,4 @@
+CREATE VIEW Top3Products AS
+SELECT Name, Price
+FROM Products
+ORDER BY Price DESC LIMIT 3;
